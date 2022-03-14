@@ -14,7 +14,25 @@ Float switch arrangement:
 1 dry run protection
 
 Methane measurement to avoid explosions. MQ7 Sensor EX range
+
 Outputs:
 BC847 NPN transistor switches print Relaie 
 Pump 1 Pump 2
-PIN
+Digital inputs (float switch)
+PE0 Dry run protection float switch
+PE1 Water level P1
+PE2 Water level P2
+PE3 High water
+PE4 MQ7 Analog input
+
+Activate interrupt routine for PE0-4
+
+
+
+
+Outputs:
+PB0 Relay pump 1 start
+PB1 Relay pump 2 start
+PB2 Collective fault
+PB3 Fault P1
+PB4 Fault P2
