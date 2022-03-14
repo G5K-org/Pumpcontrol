@@ -27,9 +27,6 @@ PE4 MQ7 Analog input
 
 Activate interrupt routine for PE0-4
 
-
-
-
 Outputs:
 PB0 Relay pump 1 start
 PB1 Relay pump 2 start
