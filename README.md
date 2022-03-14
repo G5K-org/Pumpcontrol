@@ -4,7 +4,7 @@ TM4C123GH6PM pump control written in C with IAR ARM
 TEIV Project
 Project idea 1.)
 Construction of a small pump control with 4 float switch inputs
-The float switch inputs are galvanically isolated from the power supply of the µC by optocouplers. The float switches represent the water level a LED gives a feedback if the water level is reached.
+The float switch inputs are galvanically isolated from the power supply of the µC by optocouplers. The float switches represent the water level a LED gives feedback if the water level is reached.
 Sensor inputs:
 Float switch arrangement:
 
