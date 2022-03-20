@@ -55,4 +55,8 @@ void FAULT_RELAIE_P2_OFF(void);
 void FAULT_P1_P2_RELAIE_ON(void);
 void FAULT_P1_P2_RELAIE_OFF(void);
 
+//Interrupt
+void init_NVIC_PORTE(void);
+void GPIO_PORTE_INTERRUPT(void);
+
 #endif

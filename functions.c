@@ -33,3 +33,17 @@ void DEBUG_OUTPUT_TEST()
   DEBUG_delay(20);
 }
 
+//Interupt
+void init_NVIC_PORTE(void)
+{
+   NVIC_EN0_R |= (1<<4);
+}
+
+void GPIO_PORTE_INTERRUPT(void)
+ {
+  GPIO_PORTF_DATA_R |= LED_GREEN; 
+  GPIO_PORTE_ICR_R |= SENS_HIGH_WATER | SENS_P2_WATER | SENS_P1_WATER | SENS_DRYRUN;
+  DEBUG_delay(500);
+  GPIO_PORTF_DATA_R &= ~LED_GREEN;
+  
+ }

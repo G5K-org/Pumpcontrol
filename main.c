@@ -12,6 +12,7 @@ int main()
   
   init_PORTE();
   config_PORTE();
+  init_NVIC_PORTE();
   
   init_PORTF();
   config_PORTF();
@@ -19,10 +20,7 @@ int main()
   
   while(1)
   {
-
-DEBUG_OUTPUT_TEST();
- 
-  
+   DEBUG_OUTPUT_TEST();
   }
   return 0;
 }
