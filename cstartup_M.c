@@ -23,7 +23,7 @@ extern void SVC_Handler( void );
 extern void DebugMon_Handler( void );
 extern void PendSV_Handler( void );
 extern void SysTick_Handler( void );
-extern void GPIOF_IRQ30( void );
+extern void GPIO_PORTF_INTERRUPT( void );
 extern void GPIO_PORTE_INTERRUPT( void );
 typedef void( *intfunc )( void );
 typedef union { intfunc __fun; void * __ptr; } intvec_elem;
@@ -89,7 +89,7 @@ const intvec_elem __vector_table[] =
   0,   //27
   0,   //28
   0,   //29
-  GPIOF_IRQ30,   //30
+  GPIO_PORTF_INTERRUPT,   //30
   0,   //
   0   //
   
@@ -115,7 +115,7 @@ __weak void PendSV_Handler( void ) { while (1) {} }
 __weak void SysTick_Handler( void ) { while (1) {} }
 /*START HERE*/
 #pragma call_graph_root = "interrupt"
-__weak void GPIOF_IRQ30( void ) { while (1) {} }
+__weak void GPIO_PORTF_INTERRUPT( void ) { while (1) {} }
 #pragma call_graph_root = "interrupt"
 __weak void GPIO_PORTE_INTERRUPT( void ) { while (1) {} }
 

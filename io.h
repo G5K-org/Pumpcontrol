@@ -31,7 +31,7 @@
 #define LED_GREEN                 (1<<3)
 #define LED_BLUE                  (1<<2)
 #define LED_WHITE                 (14<<0)         //0b 0000 1110
-
+#define LED_LIGHTBLUE             (12<<0) 
 
 //PROTOTYPES
 void init_PORTB(void);
