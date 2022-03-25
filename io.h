@@ -16,6 +16,16 @@
 #define SENS_DRYRUN       (1<<3)
 #define SENS_ANA_MQ7      (1<<4) //p801 //p651
 
+
+//PORT??
+#define SENS_WSK_P1             //Wicklungschutzkontakt Bimetall Schalter
+#define SENS_WSK_P2
+//PORT??
+#define FAULT_QUITT             //Quittierungstaster mit Interrupt
+
+
+//PORT??
+
 //PF
 #define QUITT_SW          (1<<4)
 
@@ -25,7 +35,7 @@
 #define PUMP2                     (1<<1)
 #define FAULT_OUT_RELAIE          (1<<2)
 #define FAULT_P1                  (1<<3)
-#define FAULT_P2                  (1<<4)
+#define FAULT_P2                  (1<<4) //FUNKTIONIERT NICHT
 //PF
 #define LED_RED                   (1<<1)
 #define LED_GREEN                 (1<<3)
